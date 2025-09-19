@@ -141,6 +141,22 @@ CREATE TABLE accident (
     urban_or_rural_area INT REFERENCES urban_rural(code)
 );
 
+CREATE TABLE vehicle (
+    accident_index CHAR(13),
+    vehicle_reference INT,
+    vehicle_type INT REFERENCES vehicle_type(code),
+    vehicle_manoeuvre INT REFERENCES vehicle_manoeuvre(code),
+    vehicle_location_restricted_lane INT REFERENCES vehicle_location(code),
+    was_vehicle_left_hand_drive INT,
+    sex_of_driver INT REFERENCES sex(code),
+    age_of_driver INT,
+    age_band_of_driver INT REFERENCES age_band(code),
+    propulsion_code INT REFERENCES propulsion_code(code),
+    age_of_vehicle INT,
+    PRIMARY KEY (accident_index, vehicle_reference),
+    FOREIGN KEY (accident_index) REFERENCES accident(accident_index)
+);
+
 CREATE TABLE casualty (
     accident_index CHAR(13),
     vehicle_reference INT,
@@ -159,18 +175,3 @@ CREATE TABLE casualty (
     FOREIGN KEY (accident_index, vehicle_reference) REFERENCES vehicle(accident_index, vehicle_reference)
 );
 
-CREATE TABLE vehicle (
-    accident_index CHAR(13),
-    vehicle_reference INT,
-    vehicle_type INT REFERENCES vehicle_type(code),
-    vehicle_manoeuvre INT REFERENCES vehicle_manoeuvre(code),
-    vehicle_location_restricted_lane INT REFERENCES vehicle_location(code),
-    was_vehicle_left_hand_drive INT,
-    sex_of_driver INT REFERENCES sex(code),
-    age_of_driver INT,
-    age_band_of_driver INT REFERENCES age_band(code),
-    propulsion_code INT REFERENCES propulsion_code(code),
-    age_of_vehicle INT,
-    PRIMARY KEY (accident_index, vehicle_reference),
-    FOREIGN KEY (accident_index) REFERENCES accident(accident_index)
-);
