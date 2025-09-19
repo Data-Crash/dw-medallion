@@ -1,0 +1,4 @@
+.venv
+bronze/*.parquet
+silver/*.parquet
+etl/__pycache__/
