@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: datacrash
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: datacrash
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./silver/DDL.sql:/docker-entrypoint-initdb.d/DDL.sql
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
