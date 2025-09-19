@@ -1,0 +1,10 @@
+2025-09-18 21:50:21,368 - INFO - 🔹 Iniciando pipeline Raw → Bronze
+2025-09-18 21:50:21,382 - INFO - Arquivo raw/Accidents0515.csv lido com 2 linhas
+2025-09-18 21:50:21,383 - INFO - Raw carregado com 2 linhas e 1 colunas
+2025-09-18 21:50:21,454 - INFO - Bronze salvo em bronze/accidents.parquet
+2025-09-18 21:50:21,454 - INFO - ✅ Pipeline concluído (Raw → Bronze)
+2025-09-19 09:11:00,682 - INFO - 🔹 Iniciando pipeline Raw → Bronze
+2025-09-19 09:11:16,417 - INFO - Arquivo raw/Accidents0515.csv lido com 1780653 linhas
+2025-09-19 09:11:16,423 - INFO - Raw carregado com 1780653 linhas e 32 colunas
+2025-09-19 09:11:19,514 - INFO - Bronze salvo em bronze/accidents.parquet
+2025-09-19 09:11:19,515 - INFO - ✅ Pipeline concluído (Raw → Bronze)
