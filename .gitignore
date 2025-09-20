@@ -1,4 +1,7 @@
 .venv
-bronze/*.parquet
+raw/*.parquet
 silver/*.parquet
-etl/__pycache__/
+__pycache__/
+venv/
+.venv/
+*.pyc
