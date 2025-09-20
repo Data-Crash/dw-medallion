@@ -1,0 +1,7 @@
+.venv
+raw/*.parquet
+silver/*.parquet
+__pycache__/
+venv/
+.venv/
+*.pyc

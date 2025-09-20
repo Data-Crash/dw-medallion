@@ -125,7 +125,7 @@ CREATE TABLE accident (
     accident_severity INT REFERENCES accident_severity(code),
     number_of_vehicles INT,
     number_of_casualties INT,
-    accident_date DATE,
+    accident_timestamp TIMESTAMP,
     day_of_week INT REFERENCES day_of_week(code),
     accident_time CHAR(5),
     road_type INT REFERENCES road_type(code),
