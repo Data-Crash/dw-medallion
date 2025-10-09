@@ -1118,6 +1118,7 @@ Este arquivo contém todos os valores possíveis (códigos e labels) para as col
 
 | code | label                        |
 | ---- | ---------------------------- |
+| 0    | Not a bus or coach passenger |
 | 1    | Boarding                     |
 | 2    | Alighting                    |
 | 3    | Standing passenger           |
