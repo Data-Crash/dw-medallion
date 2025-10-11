@@ -112,9 +112,8 @@ As tabelas a seguir são tabelas de dimensão. Elas servem para "traduzir" os c�
 
 ---
 
-### Tabela `joined` (Staging)
+### Tabela `joined`
 
-Esta tabela funciona como uma área de preparação (*staging area*). Ela contém todos os dados brutos em um formato desnormalizado, exatamente como foram carregados da fonte original. O propósito desta tabela é servir como um ponto de partida para o processo de ETL (Extração, Transformação e Carga), onde os dados são limpos, transformados e distribuídos para as tabelas finais do modelo dimensional (`accident`, `vehicle`, `casualty`).
 
 | Nome da Coluna | Tipo de Dado | Descrição |
 | :--- | :--- | :--- |
@@ -162,8 +161,6 @@ Esta tabela funciona como uma área de preparação (*staging area*). Ela conté
 ---
 
 ### Modelo Entidade-Relacionamento (MER) - Conceitual
-
-Este modelo foca nas entidades de negócio e suas relações, sem se prender aos detalhes técnicos do banco de dados.
 
 **Entidades Principais:**
 
