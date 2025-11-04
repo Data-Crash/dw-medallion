@@ -1240,5 +1240,3 @@ Este arquivo contém todos os valores possíveis (códigos e labels) para as col
 | 11   | Fuel cells          |
 | 12   | Electric diesel     |
 | -1   | Undefined           |
-
-# 

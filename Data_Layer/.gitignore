@@ -1,6 +1,6 @@
 .venv
-raw/bronze/
-silver/parquet_tables/
+raw/parquet/
+silver/parquet/
 __pycache__/
 venv/
 .venv/

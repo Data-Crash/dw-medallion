@@ -8,12 +8,13 @@ O projeto tem como objetivo **armazenar, limpar e modelar dados de acidentes rod
 
 ## 📂 Estrutura do Repositório
 
-data-warehouse-medallion/</br>
-├── raw/ # Dados originais (Bronze) </br>
-├── silver/ # Dados limpos e padronizados</br>
-├── gold/ # Dados modelados para BI (esquema estrela)</br>
-└── README.md
-
+dw-medallion/</br>
+ ├──Data_Layer
+ |  ├── raw/ # Dados originais (Bronze) </br>
+ |  ├── silver/ # Dados limpos e padronizados</br>
+ |  ├── gold/ # Dados modelados para BI (esquema estrela)</br>
+ |  └── README.md
+ └──Trasformer # ETLs e transformações das tabelas </br>
 ---
 
 ## 🔹 Camadas
